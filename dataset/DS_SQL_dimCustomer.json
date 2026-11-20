@@ -1,0 +1,56 @@
+{
+	"name": "DS_SQL_dimCustomer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzureSQL_ShopEasy_vibhuti",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CustomerID",
+				"type": "varchar"
+			},
+			{
+				"name": "Fullname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Email",
+				"type": "nvarchar"
+			},
+			{
+				"name": "City",
+				"type": "nvarchar"
+			},
+			{
+				"name": "State",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Customersegment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Joindate",
+				"type": "date"
+			},
+			{
+				"name": "LoadAt",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dim_customers"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,16 @@
+{
+	"name": "adf-shopeasy-2024-vibhuti",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8236d3fb-b38b-4f3e-bfdc-9a1115a29853",
+		"tenantId": "27aa6358-5584-4b0b-887d-d422defd9d51"
+	}
+}

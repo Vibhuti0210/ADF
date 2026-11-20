@@ -1,0 +1,54 @@
+{
+	"name": "DS_SQL_factReturns",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzureSQL_ShopEasy_vibhuti",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ReturnID",
+				"type": "varchar"
+			},
+			{
+				"name": "OrderID",
+				"type": "varchar"
+			},
+			{
+				"name": "CustomerID",
+				"type": "varchar"
+			},
+			{
+				"name": "Returndate",
+				"type": "date"
+			},
+			{
+				"name": "ReturnReason",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ReturnStatus",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RefundAmount",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "LoadAt",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "fact_returns"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
